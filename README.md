@@ -17,6 +17,12 @@ DB_USERNAME=root
 DB_PASSWORD=secret
 ```
 
+install package
+
+```
+composer install
+```
+
 run artisan
 
 ```
