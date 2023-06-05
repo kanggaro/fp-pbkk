@@ -24,7 +24,7 @@
                 </div>
                 <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Login</button>
             </form>
-            <p class="text-center mt-4">Don't have an account? <a href="/login" class="text-blue-500 font-bold">Register</a></p>
+            <p class="text-center mt-4">Don't have an account? <a href="/register" class="text-blue-500 font-bold">Register</a></p>
         </div>
     </div>
 </body>
