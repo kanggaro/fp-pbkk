@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  db:
+    image: mysql:8
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: library-db
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_PASSWORD: dev-password
+      MYSQL_USER: library-user
+    networks:
+      fp:
+        ipv4_address: 11.1.2.10
+
+networks:
+  fp:
+    ipam:
+      config:
+        - subnet: 11.1.2.0/24
