@@ -4,6 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Author;
+use App\Models\Publisher;
+use App\Models\Category;
 
 class Book extends Model
 {
@@ -36,4 +39,24 @@ class Book extends Model
         'quantity',
         'description',
     ];
+
+    public function authors()
+    {
+        return $this->belongsToMany(Author::class, 'book_author');
+    }
+
+    public function publishers()
+    {
+        return $this->belongsToMany(Publisher::class, 'book_publisher');
+    }
+
+    public function shelves()
+    {
+        return $this->belongsToMany(Shelf::class, 'book_shelf');
+    }
+
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class, 'book_category');
+    }
 }
