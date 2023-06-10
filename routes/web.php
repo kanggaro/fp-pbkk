@@ -18,6 +18,8 @@ Route::get('/success', function () {
     return view('success');
 });
 
+Route::get('/books', 'App\Http\Controllers\BookController@index')->name('books.index');
+
 Route::match(['get', 'post'], '/register', function (Request $request) {
     if ($request->isMethod('post')) {
         // Validasi data
