@@ -1,21 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layout.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Library Management System</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
+@section('content')
+    <h1>Welcome, {{ $user->name }}!</h1>
 
-<body class="bg-gray-100">
-    <div class="flex items-center justify-center h-screen">
-        <div class="w-1/3 bg-white rounded-lg shadow-lg p-8">
-            <h2 class="text-2xl font-bold mb-6">Dashboard</h2>
-            <p>Welcome to your dashboard!</p>
-            <a href="/" class="text-blue-500 font-bold mt-4">Logout</a>
-        </div>
-    </div>
-</body>
+    <nav>
+        <ul>
+            <li><a href="/dashboard">Home</a></li>
+            <li><a href="/dashboard/edit-profile">Edit Profile</a></li>
+            <li>
+                <form action="/logout" method="POST">
+                    @csrf
+                    <button type="submit">Logout</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
 
-</html>
+    <h2>Book List</h2>
+    <ul>
+        @foreach ($books as $book)
+            <li>{{ $book->title }} by {{ $book->author }}</li>
+        @endforeach
+    </ul>
+
+    <form action="/search-books" method="POST">
+        @csrf
+        <input type="text" name="keyword" placeholder="Search books">
+        <button type="submit">Search</button>
+    </form>
+@endsection
