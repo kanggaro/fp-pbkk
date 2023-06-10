@@ -1,2 +1,32 @@
 - name: Stephen King
   description: 'Stephen Edwin King (born September 21, 1947) is an American author of horror, supernatural fiction, suspense, crime, science-fiction, and fantasy novels. Described as the "King of Horror", his books have sold more than 350 million copies as of 2006, and many have been adapted into films, television series, miniseries, and comic books. King has published 64 novels, including seven under the pen name Richard Bachman, and five non-fiction books. He has also written approximately 200 short stories, most of which have been published in book collections'
+
+- name: Agatha Christie
+  description: "Dame Agatha Mary Clarissa Christie, Lady Mallowan, DBE (née Miller; 15 September 1890 - 12 January 1976) was an English writer known for her 66 detective novels and 14 short story collections, particularly those revolving around fictional detectives Hercule Poirot and Miss Marple. She also wrote the world's longest-running play, the murder mystery The Mousetrap, which has been performed in the West End since 1952. A writer during the 'Golden Age of Detective Fiction', Christie has been called the 'Queen of Crime'. She also wrote six novels under the pseudonym Mary Westmacott. In 1971, she was made a Dame (DBE) by Queen Elizabeth II for her contributions to literature. Guinness World Records lists Christie as the best-selling fiction writer of all time, her novels having sold more than two billion copies."
+
+- name: Bo Seo
+  description: "Bo H. Seo is a Korean-Australian debater, journalist, author, and two time world debating champion, having won both the World Universities Debating Championship in 2016 and the World Schools Debating Championships in 2013."
+
+- name: Thomas Erikson
+  description: "Thomas Erikson is a Swedish behavioural expert, bestselling author and active lecturer. For more than 20 years, he has travelled across Europe delivering lectures and seminars in Swedish and in English to executives and managers in companies including IKEA, Coca Cola, Microsoft, Volva and KIA Motors. Surrounded by Idiots (Omgiven Av Idioter) is a Swedish runaway bestseller, selling more than 1 million copies in Sweden alone. It has sold over 3 million copies worldwide, since it was first published in 2014, and has been translated into 52 languages. For more information about the author and his work visit thomaserikson.com."
+
+- name: Richard Zurawski
+  description: "Richard Zurawski is an author specializing in industrial communication technology. His book, 'Industrial Communication Technology Handbook, Second Edition,' provides a comprehensive guide to implementing communication technologies in industrial settings. With expertise in the field, Zurawski's work serves as a valuable resource for professionals and enthusiasts in this field."
+
+- name: Katy Milkman
+  description: "Katherine L. Milkman is an American economist who is the James G. Dinan endowed Professor at The Wharton School of the University of Pennsylvania. She is the President of the Society for Judgment and Decision Making"
+
+- name: James Clear
+  description: "I'm the author of the No. 1 New York Times bestseller, Atomic Habits, which has sold more than 15 million copies worldwide and has been translated into more than 50 languages. I also known for my popular 3-2-1 newsletter, which is sent out each week to more than 2 million subscribers."
+
+- name: Douglas Giancoli
+  description: "Douglas C. Giancoli obtained his BA in physics (summa cum laude) from UC Berkeley, his MS in physics at MIT, and his PhD in elementary particle physics back at UC Berkeley. He spent 2 years as a post-doctoral fellow at UC Berkeley's Virus lab developing skills in molecular biology and biophysics. His mentors include Nobel winners Emilio Segre and Donald Glaser. He has taught a wide range of undergraduate courses, traditional as well as innovative ones, and continues to update his textbooks meticulously, seeking ways to better provide an understanding of physics for students. Doug's favorite spare-time activity is the outdoors, especially climbing peaks. He says climbing peaks is like learning physics: it takes effort and the rewards are great."
+
+- name: Dale Valrberg
+  description: "Dale Varberg is a renowned mathematician and educator recognized for his significant contributions to the field of calculus. Through his expertise and commitment to teaching, Varberg has played a crucial role in shaping calculus education. His concise and accessible approach to presenting mathematical concepts has made him a respected figure in the field."
+
+- name: Edwin Purcell
+  description: "Edward Mills Purcell (August 30, 1912 - March 7, 1997) was an American physicist who shared the 1952 Nobel Prize for Physics for his independent discovery (published 1946) of nuclear magnetic resonance in liquids and in solids. Nuclear magnetic resonance (NMR) has become widely used to study the molecular structure of pure materials and the composition of mixtures. Friends and colleagues knew him as Ed Purcell."
+
+- name: Steve Rigdon
+  description: "Steve Rigdon is an accomplished author and mathematics expert, known for his contributions to calculus education. With a strong focus on teaching and a deep understanding of the subject, Rigdon's instructional approach is highly effective in helping students grasp complex calculus concepts."
