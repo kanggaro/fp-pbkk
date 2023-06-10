@@ -12,7 +12,7 @@
     <div class="flex items-center justify-center h-screen">
         <div class="w-1/3 bg-white rounded-lg shadow-lg p-8">
             <h2 class="text-2xl font-bold mb-6">Login</h2>
-            <form action="/register" method="POST">
+            <form action="/login" method="POST">
                 @csrf <!-- Menambahkan token CSRF untuk keamanan -->
                 <div class="mb-4">
                     <label for="email" class="block mb-2 text-sm font-bold">Email</label>
@@ -28,4 +28,5 @@
         </div>
     </div>
 </body>
+
 </html>
