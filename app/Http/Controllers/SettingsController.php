@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Auth\Authenticatable;
 
 class SettingsController extends Controller
 {
@@ -18,25 +17,25 @@ class SettingsController extends Controller
 
     public function update(Request $request)
     {
-        // Validasi data yang dikirimkan oleh form pengaturan
-        $request->validate([
-            'name' => 'required',
-            'email' => 'required|email|unique:users,email,' . Auth::id(),
-            'password' => 'nullable|min:8|confirmed',
-        ]);
+    //     // Validasi data yang dikirimkan oleh form pengaturan
+    //     $request->validate([
+    //         'name' => 'required',
+    //         'email' => 'required|email|unique:users,email,' . Auth::id(),
+    //         'password' => 'nullable|min:8|confirmed',
+    //     ]);
 
-        // Mengambil pengguna saat ini
-        $user = Auth::user();
+    //     // Mengambil pengguna saat ini
+    //     $user = Auth::user();
 
-        // Mengupdate data pengguna berdasarkan input pengaturan yang dikirimkan
-        $user->name = $request->name;
-        $user->email = $request->email;
-        if ($request->password) {
-            $user->password = bcrypt($request->password);
-        }
-        $user->save();
+    //     // Mengupdate data pengguna berdasarkan input pengaturan yang dikirimkan
+    //     $user->name = $request->name;
+    //     $user->email = $request->email;
+    //     if ($request->password) {
+    //         $user->password = bcrypt($request->password);
+    //     }
+    //     $user->save();
 
         // Redirect ke halaman pengaturan dengan pesan sukses
-        return redirect()->route('settings.index')->with('success', 'Pengaturan berhasil diperbarui.');
+    //     return redirect()->route('settings.index')->with('success', 'Pengaturan berhasil diperbarui.');
     }
 }
