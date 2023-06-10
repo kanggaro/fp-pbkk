@@ -1,3 +1,71 @@
 - book: 'The Outsider: A Novel'
   publisher:
     - 'Scribner'
+
+- book: 'Billy Summers'
+  publisher:
+    - 'Scribner'
+  
+- book: 'Doctor Sleep: A Novel'
+  publisher:
+    - 'Scribner'
+
+- book: 'Mr. Mercedes'
+  publisher:
+    - 'Scribner'
+
+- book: 'If It Bleeds'
+  publisher:
+    - 'Scribner'
+
+- book: '11.22.63'
+  publisher:
+    - 'Scribner'
+
+- book: 'Murder on the Orient Express'
+  publisher:
+    - 'Harper Collins'
+
+- book: 'The Murder of Roger Ackroyd'
+  publisher:
+    - 'Harper Collins'
+
+- book: 'Death on the Nile'
+  publisher:
+    - 'Harper Collins'
+
+- book: 'Endless Night'
+  publisher:
+    - 'Harper Collins'
+
+- book: 'A Murder Is Announced'
+  publisher:
+    - 'Harper Collins'
+
+- book: 'Good Arguments : How Debate Teaches Us to Listen and Be Heard'
+  publisher:
+    - 'Penguin Press'
+
+- book: 'Surrounded By Idiots'
+  publisher:
+    - "St. Martin's Press"
+
+- book: 'Industrial Communication Technology Handbook, Second Edition'
+  publisher:
+    - 'CRC Press'
+  
+- book: 'How To Change: The Science Of Getting From Where You Are To Where You Want to Be'
+  publisher:
+    - 'Portfolio'
+
+- book: 'Atomic Habits'
+  publisher:
+    - 'Random House'
+
+- book: 'Physics Principles with Applications, Global Edition'
+  publisher:
+    - 'Pearson Education'
+
+- book: 'Calculus'
+  publisher:
+    - 'Prentice Hall'

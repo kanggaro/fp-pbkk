@@ -1,3 +1,78 @@
 - book: 'The Outsider: A Novel'
   shelf:
     - '1'
+
+- book: 'Billy Summers'
+  shelf:
+    - '1'
+
+- book: 'Doctor Sleep: A Novel'
+  shelf:
+    - '1'
+
+- book: 'Mr. Mercedes'
+  shelf:
+    - '1'
+
+- book: 'If It Bleeds'
+  shelf:
+    - '1'
+
+- book: '11.22.63'
+  shelf:
+    - '1'
+
+- book: 'Murder on the Orient Express'
+  shelf:
+    - '2'
+
+- book: 'The Murder of Roger Ackroyd'
+  shelf:
+    - '2'
+
+- book: 'Death on the Nile'
+  shelf:
+    - '2'
+
+- book: 'Endless Night'
+  shelf:
+    - '2'
+
+- book: 'A Murder Is Announced'
+  shelf:
+    - '2'
+
+- book: 'Good Arguments : How Debate Teaches Us to Listen and Be Heard'
+  shelf:
+    - '3'
+
+- book: 'Surrounded By Idiots'
+  shelf:
+    - '3'
+
+- book: 'Industrial Communication Technology Handbook, Second Edition'
+  shelf:
+    - '3'
+
+- book: 'How To Change: The Science Of Getting From Where You Are To Where You Want to Be'
+  shelf:
+    - '3'
+
+- book: 'Atomic Habits'
+  shelf:
+    - '3'
+
+- book: 'Physics Principles with Applications, Global Edition'
+  shelf:
+    - '4'
+
+- book: 'Calculus'
+  shelf:
+    - '4'
+
+- book: 'Atomic Habits'
+  shelf:
+    - '4'
+
+
+  
