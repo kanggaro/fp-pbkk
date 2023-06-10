@@ -18,7 +18,7 @@
             <nav class="py-4">
                 <ul>
                     <li class="px-4 py-2 hover:bg-gray-700">
-                        <a href="#" class="block">Daftar Buku</a>
+                        <a href="#" class="block">Menu 1</a>
                     </li>
                     <li class="px-4 py-2 hover:bg-gray-700">
                         <a href="#" class="block">Menu 2</a>
