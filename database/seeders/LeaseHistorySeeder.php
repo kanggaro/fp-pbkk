@@ -24,7 +24,11 @@ class LeaseHistorySeeder extends Seeder
 
         $now = Carbon::now();
 
-        foreach ($data as $leaseHistoryData) {
+        $filteredData = array_filter($data, function ($entry) {
+            return !is_null($entry['return_time']);
+        });
+
+        foreach ($filteredData  as $leaseHistoryData) {
             $bookName = $leaseHistoryData['book'];
             $userEmail = $leaseHistoryData['user'];
             $leaseTime = $leaseHistoryData['lease_time'];
