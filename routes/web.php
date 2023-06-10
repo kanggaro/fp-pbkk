@@ -14,13 +14,18 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/register', function () {
+    return view('register');
+});
+
 Route::get('/success', function () {
     return view('success');
 });
 
-Route::get('/register', function () {
-    return view('register');
+Route::get('/dashboard', function () {
+    return view('dashboard');
 });
+
 
 Route::post('/register', function (Request $request) {
     // Validasi data
