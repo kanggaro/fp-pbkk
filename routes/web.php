@@ -1,70 +1,38 @@
 <?php
 
+use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\Request;
-use App\Models\User;
 
 Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/success', function () {
+    return view('success');
+})->middleware('auth'); // middleware
+
+Route::get('/register', function () {
+    return view('register');
+})->name('register');
+
 Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/register', function () {
-    return view('register');
-});
 
-Route::get('/success', function () {
-    return view('success');
-});
+Route::post('/register', [RegistrationController::class, 'register'])->name('register');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
+Route::post('/login', [LoginController::class, 'login']);
 
 
-Route::post('/register', function (Request $request) {
-    // Validasi data
-    $request->validate([
-        'first_name' => 'required',
-        'last_name' => 'required',
-        'email' => 'required|email|unique:users',
-        'password' => 'required|min:8',
-        'phone_number' => 'nullable',
-    ]);
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-    // Periksa apakah email sudah terdaftar
-    $user = User::where('email', $request->email)->first();
-    if ($user) {
-        return redirect('/register')->withErrors(['Email already exists']);
-    }
+Route::get('/settings', [SettingsController::class, 'index'])->name('settings.index');
+Route::post('/settings', [SettingsController::class, 'update'])->name('settings.update');
 
-    // Simpan data pengguna ke dalam database
-    $user = new User();
-    $user->first_name = $request->first_name;
-    $user->last_name = $request->last_name;
-    $user->email = $request->email;
-    $user->password = Hash::make($request->password);
-    $user->phone_number = $request->phone_number;
-    $user->save();
+Route::get('/profile', [SettingsController::class, 'profile'])->name('profile');
 
-    // Redirect ke halaman sukses
-    return redirect('/success');
-})->name('register');
-
-
-Route::post('/login', function (Request $request) {
-    $credentials = $request->only('email', 'password');
-
-    if (Auth::attempt($credentials)) {
-        // Jika login berhasil
-        return redirect('/dashboard');
-    } else {
-        // Jika login gagal
-        return redirect('/login')->withErrors(['Invalid credentials']);
-    }
-});
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
