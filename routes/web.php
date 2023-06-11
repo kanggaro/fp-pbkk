@@ -19,7 +19,7 @@ Route::get('/register', function () {
 
 Route::get('/login', function () {
     return view('users.login');
-});
+})->name('login');
 
 Route::get('/error', function () {
     return view('users.error');
