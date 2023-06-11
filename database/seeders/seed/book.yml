@@ -4,3 +4,122 @@
   pages: 576
   quantity: 10
   description: 'An unspeakable crime. A confounding investigation. At a time when the King brand has never been stronger, he has delivered one of his most unsettling and compulsively readable stories.'
+
+- name: 'Billy Summers'
+  isbn: 9781982173623
+  year_released: 2021
+  pages: 528
+  quantity: 13
+  description: "Billy Summers is a man in a room with a gun. He's a killer for hire and the best in the business. But he'll do the job only if the target is a truly bad guy. And now Billy wants out. But first there is one last hit. Billy is among the best snipers in the world, a decorated Iraq war vet, a Houdini when it comes to vanishing after the job is done. So what could possibly go wrong?"
+
+- name: 'Doctor Sleep: A Novel'
+  isbn: 9781476727653
+  year_released: 2013
+  pages: 531
+  quantity: 7
+  description: 'After decades as an itinerant alcoholic, middle-aged Dan Torrance uses his remnant powers to assist the dying before coming to the aid of a twelve-year-old girl being tortured by a tribe of murderous paranormals.'
+
+- name: 'Mr. Mercedes'
+  isbn: 9781476754451
+  year_released: 2014
+  pages: 448
+  quantity: 5
+  description: 'Months after a crazed hit-and-run driver kills several attendees at a Midwestern job fair, a depressed retired cop and two unlikely allies join forces to find and stop the killer, who has sent a letter threatening another attack. By the award-winning author of 11/22/63.'
+
+- name: 'If It Bleeds'
+  isbn: 9781982137977
+  year_released: 2020
+  pages: 448
+  quantity: 4
+  description: 'The novella is a form King has returned to over and over again in the course of his amazing career, and many have been made into iconic films, including “The Body” ( Stand By Me ) and “Rita Hayworth and Shawshank Redemption” ( Shawshank Redemption ). Like Four Past Midnight , Different Seasons , and most recently Full Dark, No Stars , If It Bleeds is a uniquely satisfying collection of longer short fiction by an incomparably gifted writer.'
+
+- name: '11.22.63'
+  isbn: 9781451627282
+  year_released: 2011
+  pages: 849
+  quantity: 0
+  description: "On November 22, 1963, three shots rang out in Dallas, President Kennedy died, and the world changed. What if you could change it back? Stephen King's heart-stoppingly dramatic new novel is about a man who travels back in time to prevent the JFK assassination—a thousand page tour de force. Following his massively successful novel Under the Dome, King sweeps readers back in time to another moment—a real life moment—when everything went wrong: the JFK assassination. And he introduces readers to a character who has the power to change the course of history. Jake Epping is a thirty-five-year-old high school English teacher in Lisbon Falls, Maine, who makes extra money teaching adults in the GED program. He receives an essay from one of the students—a gruesome, harrowing first person story about the night 50 years ago when Harry Dunning's father came home and killed his mother, his sister, and his brother with a hammer. Harry escaped with a smashed leg, as evidenced by his crooked walk."
+
+- name: 'Murder on the Orient Express'
+  isbn: 9780007119318
+  year_released: 2001
+  pages: 256
+  quantity: 8
+  description: "Just After Midnight, A Snowdrift Stopped The Orient Express In Its Tracks. The Luxurious Train Was Surprisingly Full For The Time Of The Year. But By The Morning There Was One Passenger Fewer. An American Lay Dead In His Compartment, Stabbed A Dozen Times, His Door Locked From The Inside. With Tension Mounting, Detective Hercule Poirot Comes Up With Not One, But Two Solutions To The Crime."
+
+- name: 'The Murder of Roger Ackroyd'
+  isbn: 9780062073563
+  year_released: 1926
+  pages: 304
+  quantity: 14
+  description: 'Roger Ackroyd knew too much. He knew that the woman he loved had poisoned her brutal first husband. He suspected also that someone had been blackmailing her. Then, tragically, came the news that she had taken her own life with a drug overdose. But the evening post brought Roger one last fatal scrap of information. Unfortunately, before he could finish reading the letter, he was stabbed to death.'
+
+- name: 'Death on the Nile'
+  isbn: 9781579126896
+  year_released: 2001
+  pages: 464
+  quantity: 1
+  description: "John Moffatt stars as the famous Belgian detective in this BBC Radio 4 full-cast dramatisation of one of Christie's most popular novels. Linnet Ridgeway has led a charmed life. Blessed with beauty, enormous wealth and a devoted husband, she has everything anyone could wish for. But as the happy couple set out on an idyllic honeymoon cruise on the Nile, storm clouds are gathering ..."
+
+- name: 'Endless Night'
+  isbn: 9780007151677
+  year_released: 1967
+  pages: 224
+  quantity: 8
+  description: "When penniless Michael Rogers discovers the beautiful house at Gipsy's Acre and then meets the heiress Ellie, it seems that all his dreams have come true at once. But he ignores an old woman's warning of an ancient curse, and evil begins to stir in paradise. As Michael soon learns: Gipsy's Acre is the place where fatal 'accidents' happen..."
+
+- name: 'A Murder Is Announced'
+  isbn: 9780062073631
+  year_released: 2011
+  pages: 320
+  quantity: 3
+  description: "The villagers of Chipping Cleghorn are agog with curiosity when the Gazette advertises “A murder is announced and will take place on Friday, October 29th, at Little Paddocks at 6.30 p.m.” A childish practical joke? Or a spiteful hoax? Unable to resist the mysterious invitation, the locals arrive at Little Paddocks at the appointed time when, without warning, the lights go out and a gun is fired. When they come back on, a gruesome scene is revealed. An impossible crime? Only Miss Marple can unravel it."
+
+- name: 'Good Arguments : How Debate Teaches Us to Listen and Be Heard'
+  isbn: 9780593299517
+  year_released: 2022
+  pages: 320
+  quantity: 3
+  description: "At a time when every disagreement turns toxic, world champion debater Bo Seo reveals the timeless secrets of effective communication and persuasion. 'The rare book that has the potential to make you smarter—and everyone around you wiser.'  (Adam Grant)"
+
+- name: 'Surrounded By Idiots'
+  isbn: 9781250179937
+  year_released: 2019
+  pages: 304
+  quantity: 6
+  description: "A runaway bestseller in Sweden that has sold more than a million copies worldwide, Surrounded by Idiots shares a simple, revolutionary method of understanding the people around you that will change how you interact with everyone from your coworkers to your spouse. Author Thomas Erikson explains that there are four key behaviour types that define how we interact with and perceive the people around us. Understanding someone's pattern of behaviour is the key to successful communication. The so-called 'idiots' in our lives are most often simply people who have a different behaviour profile and style of communication."
+
+- name: 'Industrial Communication Technology Handbook, Second Edition'
+  isbn: 9781482207323
+  year_released: 2014
+  pages: 1756
+  quantity: 6
+  description: "Featuring contributions from major technology vendors, industry consortia, and government and private research establishments, the Industrial Communication Technology Handbook, Second Edition provides comprehensive and authoritative coverage of wire- and wireless-based specialized communication networks used in plant and factory automation, automotive applications, avionics, building automation, energy and power systems, train applications, and more."
+
+- name: 'How To Change: The Science Of Getting From Where You Are To Where You Want to Be'
+  isbn: 9780593083758
+  year_released: 2021
+  pages: 272
+  quantity: 1
+  description: "Award-winning Wharton Professor and Choiceology podcast host Katy Milkman has devoted her career to the study of behaviour change. In this ground-breaking book, Milkman reveals a proven path that can take you from where you are to where you want to be, with a foreword from psychologist Angela Duckworth, the best-selling author of Grit."
+
+- name: 'Atomic Habits'
+  isbn: 9781473537804
+  year_released: 2021
+  pages: 285
+  quantity: 0
+  description: "Transform your life with tiny changes in behaviour, starting now. People think that when you want to change your life, you need to think big. But world-renowned habits expert James Clear has discovered another way. He knows that real change comes from the compound effect of hundreds of small decisions: doing two push-ups a day, waking up five minutes early, or holding a single short phone call. He calls them atomic habits. In this ground-breaking book, Clears reveals exactly how these minuscule changes can grow into such life-altering outcomes. He uncovers a handful of simple life hacks (the forgotten art of Habit Stacking, the unexpected power of the Two Minute Rule, or the trick to entering the Goldilocks Zone), and delves into cutting-edge psychology and neuroscience to explain why they matter. Along the way, he tells inspiring stories of Olympic gold medalists, leading CEOs, and distinguished scientists who have used the science of tiny habits to stay productive, motivated, and happy. These small changes will have a revolutionary effect on your career, your relationships, and your life."
+
+- name: 'Physics Principles with Applications, Global Edition'
+  isbn: 9781292057125
+  year_released: 2015
+  pages: 1079
+  quantity: 4
+  description: "Giancoli's text is a trusted classic, known for its elegant writing, clear presentation, and quality of content. Using concrete observations and experiences you can relate to, the text features an approach that reflects how science is actually practiced: it starts with the specifics, then moves to the great generalizations and the more formal aspects of a topic to show you why we believe what we believe. Written with the goal of giving you a thorough understanding of the basic concepts of physics in all its aspects, the text uses interesting applications to biology, medicine, architecture, and digital technology to show you how useful physics is to your everyday life and in your future profession."
+
+- name: 'Calculus'
+  isbn: 9780131429246
+  year_released: 2006
+  pages: 797
+  quantity: 9
+  description: "This popular calculus text remains the shortest mainstream calculus book available - yet covers all relevant material needed by, and appropriate to, the study of calculus at this level. It's conciseness and clarity helps you focus on, and understand, critical concepts in calculus without them getting bogged down and lost in excessive and unnecessary detail. It is accurate, without being excessively rigorous, up-to-date without being faddish."
