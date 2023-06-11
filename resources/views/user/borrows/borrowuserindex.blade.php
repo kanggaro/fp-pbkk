@@ -31,7 +31,13 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/user/profile">My Profile</a></li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
+                <li>
+                  <form action="{{ route('logout') }}" method="POST">
+                      @csrf
+                      <button class="dropdown-item" type="submit">Logout</button>
+                  </form>
+                  <!-- <a class="dropdown-item" href="#">Logout</a> -->
+                </li>
               </ul>
             </li>
           </ul>
