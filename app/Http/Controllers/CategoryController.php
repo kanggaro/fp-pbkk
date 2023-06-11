@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Author;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
-class AuthorController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,9 @@ class AuthorController extends Controller
      */
     public function index()
     {
-        $authors = Author::all();
+        $categories = Category::all();
 
-        return $this->sendResponse(AuthorResource::collection($authors), 'Authors retrieved successfully.');
+        return $this->sendResponse(AuthorResource::collection($categories), 'Categories retrieved successfully.');
     }
 
     /**
@@ -32,47 +32,47 @@ class AuthorController extends Controller
             'description' => 'required',
         ]);
 
-        $author = new Author();
+        $author = new Category();
         $author->name = $request->name;
         $author->description = $request->description;
         $author->save();
 
-        return $this->sendResponse(AuthorResource::collection($author), 'Author created successfully.');
+        return $this->sendResponse(AuthorResource::collection($author),  'Category created successfully.');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Author  $author
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-        $author = Author::find($id);
+        $author = Category::find($id);
 
         if (!$author) {
             return response()->json([
-                'message' => 'Author not found'
+                'message' =>  'Category not found'
             ], 404);
         }
 
-        return $this->sendResponse(AuthorResource::collection($author), 'Author retrieved successfully.');
+        return $this->sendResponse(AuthorResource::collection($author),  'Category retrieved successfully.');
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Author  $author
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-        $author = Author::find($id);
+        $author = Category::find($id);
 
         if (!$author) {
             return response()->json([
-                'message' => 'Author not found'
+                'message' =>  'Category not found'
             ], 404);
         }
 
@@ -85,27 +85,27 @@ class AuthorController extends Controller
         $author->description = $request->description;
         $author->save();
 
-        return $this->sendResponse(AuthorResource::collection($author), 'Author updated successfully.');
+        return $this->sendResponse(AuthorResource::collection($author),  'Category updated successfully.');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Author  $author
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $author = Author::find($id);
+        $author = Category::find($id);
 
         if (!$author) {
             return response()->json([
-                'message' => 'Author not found'
+                'message' =>  'Category not found'
             ], 404);
         }
 
         $author->delete();
 
-        return $this->sendResponse(AuthorResource::collection($author), 'Author deleted successfully.');
+        return $this->sendResponse(AuthorResource::collection($author),  'Category deleted successfully.');
     }
 }
