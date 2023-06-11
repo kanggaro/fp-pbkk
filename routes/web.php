@@ -10,7 +10,7 @@ Route::get('/', function () {
 });
 
 Route::get('/success', function () {
-    return view('success');
+    return view('users.success');
 })->middleware('auth'); // middleware
 
 Route::get('/register', function () {
@@ -19,6 +19,10 @@ Route::get('/register', function () {
 
 Route::get('/login', function () {
     return view('users.login');
+});
+
+Route::get('/error', function () {
+    return view('users.error');
 });
 
 

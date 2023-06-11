@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - Library Management System</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>LMS</title>
 </head>
+<body>
 
-<body class="bg-gray-100">
-    <div class="flex h-screen">
-        <!-- Sidebar -->
-        <aside class="bg-gray-800 text-white w-1/5">
-            <div class="p-4">
-                <h2 class="text-2xl font-bold">Dashboard</h2>
-            </div>
-            <nav class="py-4">
-                <ul>
-                    <li class="px-4 py-2 hover:bg-gray-700">
-                        <a href="#" class="block">Daftar Buku</a>
-                    </li>
-                    <li class="px-4 py-2 hover:bg-gray-700">
-                        <a href="#" class="block">Menu 2</a>
-                    </li>
-                    <li class="px-4 py-2 hover:bg-gray-700">
-                        <a href="#" class="block">Menu 3</a>
-                    </li>
-                    <!-- Tambahkan menu lain sesuai kebutuhan -->
-                </ul>
-            </nav>
-        </aside>
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container container-fluid">
+    <a class="navbar-brand" href="#">Library Management System</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="d-flex">
 
-        <!-- Content -->
-        <div class="w-4/5">
-            <!-- Header -->
-            <header class="bg-white shadow-md p-4">
-                <div class="flex justify-between items-center">
-                    <h1 class="text-xl font-bold">Library Management System</h1>
-                    <div class="flex items-center">
-                        <a href="{{ route('profile') }}" class="text-gray-600 hover:text-gray-900 mr-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v4m0 0v4m0-4h4m-4 0H4m14 0v4m0 0v4m0-4h4m-4 0H4m10-6a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                        </a>
-                        <a href="{{ route('logout') }}" class="text-gray-600 hover:text-gray-900">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </header>
-
-            <!-- Main Content -->
-            <main class="p-4">
-                <!-- Tambahkan konten utama di sini -->
-            </main>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Book List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Borrow History</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                User
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-    </div>
-</body>
 
+    </div>
+  </div>
+</nav>
+
+    <div class="container mt-4 pt-5">
+    <!-- content -->
+    <div class="row justify-content-around">
+      <h4 class="text-center mb-5">Enjoy Our Collection Books</h4>
+      <div class="card m-3 col-4">
+        <div class="card-body">
+          <h5 class="card-title">Book List</h5>
+          <p class="card-text">Search your favorite book here.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+      <div class="card m-3 col-4">
+        <div class="card-body">
+          <h5 class="card-title">Borrow History</h5>
+          <p class="card-text">Check your book loans here.</p>
+          <a href="#" class="btn btn-primary">Button</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- endsection content -->
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
 </html>

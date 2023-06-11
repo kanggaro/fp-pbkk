@@ -11,8 +11,8 @@
 <body class="bg-gray-100">
     <div class="flex items-center justify-center h-screen">
         <div class="w-1/3 bg-white rounded-lg shadow-lg p-8">
-            <h2 class="text-2xl font-bold mb-6">Registration Error</h2>
-            <p class="text-center mt-4">An error occurred during the registration process. Please try again later.</p>
+            <h2 class="text-2xl font-bold mb-6">Login Error</h2>
+            <p class="text-center mt-4">An error occurred during the login process. Please try again later.</p>
             <div class="flex justify-center mt-8">
                 <a href="/" class="text-blue-500 font-bold">Back to Home</a>
             </div>

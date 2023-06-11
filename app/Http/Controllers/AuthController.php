@@ -15,8 +15,10 @@ class AuthController extends Controller
             'first_name' => 'required',
             'last_name' => 'required',
             'email' => 'required|email|unique:users',
-            'password' => 'required|min:8',
+            'password' => 'required|min:8|confirmed',
             'phone_number' => 'nullable',
+        ], [
+            'password.confirmed' => 'The password confirmation does not match.',
         ]);
 
         // Simpan data pengguna ke dalam database
