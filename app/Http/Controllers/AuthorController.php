@@ -16,9 +16,10 @@ class AuthorController extends Controller
     {
         $authors = Author::all();
 
-        return response()->json([
-            'data' => $authors
-        ]);
+        // return response()->json([
+        //     'data' => $authors
+        // ]);
+        return $this->sendResponse(AuthorResource::collection($authors), 'Authors retrieved successfully.');
     }
 
     /**
@@ -39,10 +40,7 @@ class AuthorController extends Controller
         $author->description = $request->description;
         $author->save();
 
-        return response()->json([
-            'message' => 'Author created successfully',
-            'data' => $author
-        ], 201);
+        return $this->sendResponse(AuthorResource::collection($author), 'Author created successfully.');
     }
 
     /**
@@ -60,9 +58,8 @@ class AuthorController extends Controller
                 'message' => 'Author not found'
             ], 404);
         }
-        return response()->json([
-            'data' => $author
-        ]);
+
+        return $this->sendResponse(AuthorResource::collection($author), 'Author retrieved successfully.');
     }
 
     /**
@@ -87,14 +84,11 @@ class AuthorController extends Controller
             'description' => 'required',
         ]);
 
-        $author = new Author();
         $author->name = $request->name;
         $author->description = $request->description;
         $author->save();
 
-        return response()->json([
-            'data' => $author
-        ]);
+        return $this->sendResponse(AuthorResource::collection($author), 'Author updated successfully.');
     }
 
     /**
@@ -115,8 +109,6 @@ class AuthorController extends Controller
 
         $author->delete();
 
-        return response()->json([
-            'message' => 'Author deleted successfully'
-        ], 201);
+        return $this->sendResponse(AuthorResource::collection($author), 'Author deleted successfully.');
     }
 }
