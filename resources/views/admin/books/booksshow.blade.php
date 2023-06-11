@@ -33,7 +33,7 @@
                 Admin
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">My Profile</a></li>
+                <li><a class="dropdown-item" href="/admin/profile">My Profile</a></li>
                 <li><a class="dropdown-item" href="#">Logout</a></li>
               </ul>
             </li>

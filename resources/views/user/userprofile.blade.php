@@ -41,26 +41,67 @@
   </div>
 </nav>
 
-    <div class="container mt-4 pt-5">
+    <div class="container mt-4">
     <!-- content -->
-    <div class="row justify-content-around">
-      <h4 class="text-center mb-5">Enjoy Our Collection Books</h4>
-      <div class="card m-3 col-4">
-        <div class="card-body">
-          <h5 class="card-title">Book List</h5>
-          <p class="card-text">Search your favorite book here.</p>
-          <a href="user/books" class="btn btn-primary opacity-75">More</a>
+    <div class="row mb-4">
+        <div class="col-lg-12 margin-tb">
+          <!-- <div class="pull-left">
+              <a class="btn btn-outline-primary opacity-75" href="/user"> < </a>
+          </div> -->
+            <div class="pull-right">
+                <hr>
+                    <h4>My Profile</h4>
+                <hr>
+            </div>
         </div>
-      </div>
-      <div class="card m-3 col-4">
-        <div class="card-body">
-          <h5 class="card-title">Borrow History</h5>
-          <p class="card-text">Check your loans book here.</p>
-          <a href="user/borrows" class="btn btn-primary opacity-75">More</a>
-        </div>
-      </div>
-
     </div>
+
+
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <strong>Whoops!</strong> There were some problems with your input.<br><br>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
+
+    <form action="" method="POST">
+    	@csrf
+        @method('PUT')
+    
+		    <div class="mb-3 row">
+		        <strong class="col-sm-2 col-form-label">First Name:</strong>
+            <div class="col-sm-10">
+                <input type="text" name="firstname" value="User" class="form-control" placeholder="firstname">
+		        </div>
+		    </div>
+		    <div class="mb-3 row">
+		        <strong class="col-sm-2 col-form-label">Last Name:</strong>
+            <div class="col-sm-10">
+                <input type="text" name="lastname" value="User" class="form-control" placeholder="lastname">
+		        </div>
+		    </div>
+		    <div class="mb-3 row">
+		        <strong class="col-sm-2 col-form-label">Email:</strong>
+            <div class="col-sm-10">
+                <input type="email" name="email" value="user@example" class="form-control" placeholder="email">
+		        </div>
+		    </div>
+		    <div class="mb-3 row">
+		        <strong class="col-sm-2 col-form-label">Phone Number:</strong>
+            <div class="col-sm-10">
+                <input type="number" name="phonenumber" value="081111111111" class="form-control" placeholder="phonenumber">
+		        </div>
+		    </div>
+		    <div class="row ms-1 mt-5">
+		      <button type="submit" class="btn btn-primary opacity-75">Update</button>
+		    </div>
+
+    </form>
     <!-- endsection content -->
     </div>
 

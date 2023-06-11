@@ -14,7 +14,7 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             // Jika login berhasil
             // return redirect('/dashboard');
-            if(Auth::user()->email == "admin2@example.com")
+            if(Auth::user()->email == "admin2@example.com" or Auth::user()->email == "admin2@gmail.com")
                 return redirect('/admin');
             else 
                 return redirect('/user');

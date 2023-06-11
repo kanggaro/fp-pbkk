@@ -43,6 +43,9 @@ Route::get('/profile', [SettingsController::class, 'profile'])->name('profile');
 Route::get('/admin', function () {
     return view('.admin.adminpage');
 });
+    Route::get('/admin/profile', function () {
+        return view('.admin.adminprofile');
+    });
     Route::get('/admin/books', function () {
         return view('.admin.books.booksindex');
     });
@@ -75,6 +78,9 @@ Route::get('/admin', function () {
 Route::get('/user', function () {
     return view('.user.userpage');
 });
+    Route::get('/user/profile', function () {
+        return view('.user.userprofile');
+    });
     Route::get('/user/books', function () {
         return view('.user.books.booksindex');
     });

@@ -46,46 +46,65 @@
 
     <div class="container mt-4">
     <!-- content -->
-      <div class="row">
-          <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <a class="btn btn-outline-success opacity-75" href="/admin/users"> < </a>
+    <div class="row mb-4">
+        <div class="col-lg-12 margin-tb">
+          <!-- <div class="pull-left">
+              <a class="btn btn-outline-success opacity-75" href="/admin/users"> < </a>
+          </div> -->
+            <div class="pull-right">
+                <hr>
+                    <h4>Edit User</h4>
+                <hr>
             </div>
-              <div class="pull-right">
-                  <hr>
-                    <h4>Detail User</h4>
-                  <hr>
-              </div>
-          </div>
-      </div>
+        </div>
+    </div>
 
-      <div class="mb-3 row">
-              <strong for="firstname" class="col-sm-2 col-form-label">First Name:</strong>
-              <div class="col-sm-10">
-                <input type="text" name="firstname" class="form-control" placeholder="firstname">
-              </div>
-      </div>
-      <div class="mb-3 row">
-              <strong for="lastname" class="col-sm-2 col-form-label">Last Name:</strong>
-              <div class="col-sm-10">
-                <input type="text" name="lastname" class="form-control" placeholder="lastname">
-              </div>
-      </div>
-      <div class="mb-3 row">
-              <strong for="email" class="col-sm-2 col-form-label">Email:</strong>
-              <div class="col-sm-10">
-                <input type="email" name="email" class="form-control" placeholder="your@email.com">
-              </div>
-      </div>
-      <div class="mb-3 row">
-              <strong for="phonenumber" class="col-sm-2 col-form-label">Phone Number:</strong>
-              <div class="col-sm-10">
-                <input type="number" name="phonenumber" class="form-control" placeholder="phonenumber">
-              </div>
-      </div>
-      <div class="row ms-1 mt-3">
+
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <strong>Whoops!</strong> There were some problems with your input.<br><br>
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
+
+    <form action="" method="POST">
+    	@csrf
+        @method('PUT')
+    
+		    <div class="mb-3 row">
+		        <strong class="col-sm-2 col-form-label">First Name:</strong>
+            <div class="col-sm-10">
+                <input type="text" name="firstname" value="Admin" class="form-control" placeholder="firstname">
+		        </div>
+		    </div>
+		    <div class="mb-3 row">
+		        <strong class="col-sm-2 col-form-label">Last Name:</strong>
+            <div class="col-sm-10">
+                <input type="text" name="lastname" value="Admin" class="form-control" placeholder="lastname">
+		        </div>
+		    </div>
+		    <div class="mb-3 row">
+		        <strong class="col-sm-2 col-form-label">Email:</strong>
+            <div class="col-sm-10">
+                <input type="email" name="email" value="Admin@example.com" class="form-control" placeholder="email">
+		        </div>
+		    </div>
+		    <div class="mb-3 row">
+		        <strong class="col-sm-2 col-form-label">Phone Number:</strong>
+            <div class="col-sm-10">
+                <input type="number" name="phonenumber" value="081111111111" class="form-control" placeholder="phonenumber">
+		        </div>
+		    </div>
+		    <div class="row ms-1 mt-5">
 		      <button type="submit" class="btn btn-success opacity-75">Update</button>
-		  </div>
+		    </div>
+
+    </form>
     <!-- endsection content -->
     </div>
 
