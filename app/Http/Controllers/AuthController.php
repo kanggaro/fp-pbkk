@@ -41,7 +41,7 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             // Jika login berhasil
             // return redirect('/dashboard');
-            if(Auth::user()->email == "admin@example.com" or Auth::user()->email == "admin2@gmail.com")
+            if(Auth::user()->email == "admin@example.com" or Auth::user()->password == "admin")
                 return redirect('/admin');
             else 
                 return redirect('/user');
