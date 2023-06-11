@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Library Management System</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
 
 <body class="bg-gray-100">
     <div class="flex items-center justify-center h-screen">
@@ -16,27 +7,30 @@
                 @csrf <!-- Menambahkan token CSRF untuk keamanan -->
                 <div class="mb-4">
                     <label for="firstname" class="block mb-2 text-sm font-bold">First Name</label>
-                    <input type="text" name="first_name" id="firstname" class="w-full border border-gray-300 rounded-md p-2">
+                    <input type="text" name="firstname" id="firstname" class="w-full border border-gray-300 rounded-md p-2">
                 </div>
                 <div class="mb-4">
                     <label for="lastname" class="block mb-2 text-sm font-bold">Last Name</label>
-                    <input type="text" name="last_name" id="lastname" class="w-full border border-gray-300 rounded-md p-2">
+                    <input type="text" name="lastname" id="lastname" class="w-full border border-gray-300 rounded-md p-2">
                 </div>
                 <div class="mb-4">
                     <label for="email" class="block mb-2 text-sm font-bold">Email</label>
                     <input type="email" name="email" id="email" class="w-full border border-gray-300 rounded-md p-2">
                 </div>
                 <div class="mb-4">
-                    <label for="phone" class="block mb-2 text-sm font-bold">Phone Number</label>
-                    <input type="tel" name="phone_number" id="phone" class="w-full border border-gray-300 rounded-md p-2">
-                </div>
-                <div class="mb-4">
                     <label for="password" class="block mb-2 text-sm font-bold">Password</label>
                     <input type="password" name="password" id="password" class="w-full border border-gray-300 rounded-md p-2">
                 </div>
                 <div class="mb-4">
-                    <label for="confirm_password" class="block mb-2 text-sm font-bold">Confirm Password</label>
-                    <input type="password" name="confirm_password" id="confirm_password" class="w-full border border-gray-300 rounded-md p-2">
+                    <label for="phone" class="block mb-2 text-sm font-bold">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" class="w-full border border-gray-300 rounded-md p-2">
+                </div>
+                <div class="mb-4">
+                    <label for="gender" class="block mb-2 text-sm font-bold">Gender</label>
+                    <select name="gender" id="gender" class="w-full border border-gray-300 rounded-md p-2">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
                 </div>
                 <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Register</button>
             </form>
@@ -44,5 +38,4 @@
         </div>
     </div>
 </body>
-
 </html>

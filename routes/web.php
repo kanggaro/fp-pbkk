@@ -1,15 +1,22 @@
 <?php
 
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SettingsController;
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\User;
+=======
+>>>>>>> c9ea6c761f7be28d8fea98268ee4539c546f2eb7
 
 Route::get('/', function () {
     return view('home');
 });
 
+<<<<<<< HEAD
 Route::get('/login', function () {
     return view('login');
 });
@@ -119,3 +126,33 @@ Route::post('/login', function (Request $request) {
         return redirect('/login')->withErrors(['Invalid credentials']);
     }
 });
+=======
+Route::get('/success', function () {
+    return view('users.success');
+})->middleware('auth'); // middleware
+
+Route::get('/register', function () {
+    return view('users.register');
+})->name('register');
+
+Route::get('/login', function () {
+    return view('users.login');
+});
+
+Route::get('/error', function () {
+    return view('users.error');
+});
+
+
+Route::post('/register', [AuthController::class, 'register'])->name('register');
+Route::post('/login', [AuthController::class, 'login']);
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+Route::get('/settings', [SettingsController::class, 'index'])->name('settings.index');
+Route::post('/settings', [SettingsController::class, 'update'])->name('settings.update');
+
+Route::get('/profile', [SettingsController::class, 'profile'])->name('profile');
+>>>>>>> c9ea6c761f7be28d8fea98268ee4539c546f2eb7
