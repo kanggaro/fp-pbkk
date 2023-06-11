@@ -40,7 +40,8 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             // Jika login berhasil
-            return redirect('/dashboard');
+            // return redirect('/dashboard');
+            return redirect('/user');
         } else {
             // Jika login gagal
             return redirect('/error')->withErrors(['Invalid credentials']);
