@@ -18,9 +18,8 @@ Route::get('/success', function () {
     return view('success');
 });
 
+
 Route::get('/books', 'App\Http\Controllers\BookController@index')->name('books.index');
-
-
 
 /* 
     kalo mau lihat GUI admin ama user tanpa login 
