@@ -1,0 +1,14 @@
+- book: 'The Outsider: A Novel'
+  user: user@example.com
+  lease_time: '2023-06-10 10:00:00'
+  return_time: '2023-06-17 10:00:00'
+
+- book: 'Calculus'
+  user: user@example.com
+  lease_time: '2023-06-10 10:00:00'
+  return_time: null
+
+- book: 'Atomic Habits'
+  user: user@example.com
+  lease_time: '2023-06-10 10:00:00'
+  return_time: null

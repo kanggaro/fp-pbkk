@@ -1,0 +1,26 @@
+- name: Scribner
+  description: "Charles Scribner's Sons, or simply Scribner's or Scribner, is an American publisher based in New York City, known for publishing American authors including Henry James, Ernest Hemingway, F. Scott Fitzgerald, Kurt Vonnegut, Marjorie Kinnan Rawlings, Stephen King, Robert A. Heinlein, Thomas Wolfe, George Santayana, John Clellon Holmes, Don DeLillo, and Edith Wharton."
+
+- name: Harper Collins
+  description: "HarperCollins Publishers is the second-largest consumer book publisher in the world. Headquartered in New York, HarperCollins has publishing operations in 17 countries. With two hundred years of history and more than 120 branded imprints around the world, HarperCollins publishes approximately 10,000 new books every year in 16 languages, and has a print and digital catalog of more than 200,000 titles. Writing across dozens of genres, HarperCollins authors include winners of the Nobel Prize, the Pulitzer Prize, the National Book Award, the Newbery and Caldecott Medals, and the Man Booker Prize."
+
+- name: Penguin Press
+  description: "Penguin Books is a British publishing house. It was co-founded in 1935 by Allen Lane with his brothers Richard and John, as a line of the publishers The Bodley Head, only becoming a separate company the following year. Penguin revolutionised publishing in the 1930s through its inexpensive paperbacks, sold through Woolworths and other stores for sixpence, bringing high-quality fiction and non-fiction to the mass market. Its success showed that large audiences existed for serious books. It also affected modern British popular culture significantly through its books concerning politics, the arts, and science."
+
+- name: "St. Martin's Press"
+  description: "St. Martin's Press is a book publisher headquartered in Manhattan, New York City, New York, United States, in the Equitable Building. St. Martin's Press is considered one of the largest English-language publishers, bringing to the public some 700 titles a year under six imprints. The imprints include St. Martin's Press (mainstream and bestseller books), St. Martin's Griffin (mainstream paperback books, including fiction and nonfiction), Minotaur (mystery, suspense, and thrillers), Castle Point Books (specialty nonfiction), St. Martin's Essentials (lifestyle), and Wednesday Books (young adult fiction)"
+
+- name: 'CRC Press'
+  description: "The CRC Press, LLC is an American publishing group that specializes in producing technical books. Many of their books relate to engineering, science and mathematics. Their scope also includes books on business, forensics and information technology. CRC Press is now a division of Taylor & Francis, itself a subsidiary of Informa."
+
+- name: 'Portfolio'
+  description: "Portfolio is a division of Penguin Group (USA) and Penguin Random House founded in 2001 by Adrian Zackheim as a business book imprint dedicated to technology, economics, entrepreneurship, biography, and investigative journalism. Some of Portfolio's bestsellers include Start with Why by Simon Sinek, #Girlboss by Sophia Amoruso, The Obstacle Is The Way by Ryan Holiday, Team of Teams by General Stanley McChrystal, This Is Marketing by Seth Godin, The Bullet Journal Method by Ryder Carroll, Brotopia by Emily Chang, and The Four by Scott Galloway."
+
+- name: 'Random House'
+  description: "Random House is an American book publisher and the largest general-interest paperback publisher in the world. The company has several independently managed subsidiaries around the world. It is part of Penguin Random House, which is owned by German media conglomerate Bertelsmann."
+
+- name: 'Pearson Education'
+  description: "Pearson Education is a British-owned education publishing and assessment service to schools and corporations, as well for students directly. Pearson owns educational media brands including Addison-Wesley, Peachpit, Prentice Hall, eCollege, Longman, Scott Foresman, and others. Pearson is part of Pearson plc, which formerly owned the Financial Times. It claims to have been formed in 1840,[1] with the current incarnation of the company created when Pearson plc purchased the education division of Simon & Schuster (including Prentice Hall and Allyn & Bacon) from Viacom and merged it with its own education division, Addison-Wesley Longman, to form Pearson Education. Pearson Education was rebranded to Pearson in 2011 and split into an International and a North American division."
+
+- name: 'Prentice Hall'
+  description: "Prentice Hall was an American major educational publisher owned by Savvas Learning Company. Prentice Hall publishes print and digital content for the 6-12 and higher-education market, and distributes its technical titles through the Safari Books Online e-reference service."

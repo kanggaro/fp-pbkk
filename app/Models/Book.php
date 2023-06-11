@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Author;
 use App\Models\Publisher;
 use App\Models\Category;
+use App\Models\Shelf;
 
 class Book extends Model
 {

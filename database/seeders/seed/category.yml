@@ -1,0 +1,17 @@
+- name: Mystery
+  description: 'The mystery category for books encompasses stories that revolve around solving a puzzling crime or unraveling an enigmatic event. These books typically feature elements of suspense, intrigue, and detective work. The main focus is on solving the mystery, uncovering clues, and identifying the culprit or resolving the central enigma.'
+
+- name: Fiction
+  description: "Fiction is a genre of literature that encompasses stories, narratives, and imaginative works that are not based on real events or people. It is a form of storytelling that allows authors to create and explore fictional worlds, characters, and situations. Fictional works can take various forms, including novels, short stories, plays, and poems."
+
+- name: Crime
+  description: "Crime is a popular category of books that revolves around the commission and investigation of crimes, typically focusing on the actions of criminals, detectives, and the pursuit of justice. It encompasses a wide range of subgenres, including detective fiction, mystery, thriller, suspense, and crime noir."
+
+- name: Communication
+  description: "Communication as a category of books explores the art and science of human interaction and the exchange of information. It encompasses various subgenres, including interpersonal communication, mass communication, business communication, public speaking, and nonverbal communication."
+
+- name: Self-Help
+  description: "Self-help books are a popular category that focuses on personal growth, self-improvement, and empowering individuals to achieve their goals and overcome challenges. These books offer practical advice, strategies, and insights to help readers enhance their well-being, build self-confidence, improve relationships, manage stress, develop positive habits, and unlock their full potential. Self-help books aim to inspire, motivate, and provide readers with actionable steps to create positive change in their lives and promote personal empowerment."
+
+- name: Education
+  description: "Education books encompass a wide range of topics related to learning, teaching, and educational systems. These books provide valuable insights, theories, strategies, and practical advice for educators, students, and anyone interested in the field of education. They cover various subjects such as pedagogy, curriculum development, educational psychology, classroom management, assessment methods, educational technology, special education, and more. Education books aim to inform, inspire, and support individuals in their pursuit of knowledge, professional development, and improving educational practices to enhance the learning experience for students. They serve as valuable resources for educators, parents, students, policymakers, and anyone involved in the field of education."
