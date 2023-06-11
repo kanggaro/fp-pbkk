@@ -33,7 +33,7 @@ Route::get('/success', function () {
 // route admin user
 
 Route::get('/admin', function () {
-    return view('adminpage');
+    return view('.admin.adminpage');
 });
     Route::get('/admin/books', function () {
         return view('.admin.books.booksindex');
@@ -65,7 +65,7 @@ Route::get('/admin', function () {
 
 
 Route::get('/user', function () {
-    return view('userpage');
+    return view('.user.userpage');
 });
     Route::get('/user/books', function () {
         return view('.user.books.booksindex');
