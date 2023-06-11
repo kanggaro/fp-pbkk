@@ -18,6 +18,67 @@ Route::get('/success', function () {
     return view('success');
 });
 
+
+/* 
+    kalo mau lihat GUI admin ama user tanpa login 
+    comment dulu route login registernya 
+*/
+/* 
+    trus langsung tembak di searchnya aja
+    kalo mau lihat tampilan 'admin tambah buku'
+        ex: localhost:8080/admin/books/create 
+    note : masih belum bisa tombolnya
+*/
+
+// route admin user
+
+Route::get('/admin', function () {
+    return view('adminpage');
+});
+    Route::get('/admin/books', function () {
+        return view('.admin.books.booksindex');
+    });
+        Route::get('/admin/books/create', function () {
+            return view('.admin.books.bookscreate');
+        });
+        Route::get('/admin/books/edit', function () {
+            return view('.admin.books.booksedit');
+        });
+        Route::get('/admin/books/show', function () {
+            return view('.admin.books.booksshow');
+        });
+    Route::get('/admin/borrows', function () {
+        return view('.admin.borrows.borrowbookindex');
+    });
+    Route::get('/admin/users', function () {
+        return view('.admin.users.usersindex');
+    });
+        Route::get('/admin/users/create', function () {
+            return view('.admin.users.userscreate');
+        });
+        Route::get('/admin/users/edit', function () {
+            return view('.admin.users.usersedit');
+        });
+        Route::get('/admin/users/show', function () {
+            return view('.admin.users.usersshow');
+        });
+
+
+Route::get('/user', function () {
+    return view('userpage');
+});
+    Route::get('/user/books', function () {
+        return view('.user.books.booksindex');
+    });
+        Route::get('/user/books/show', function () {
+            return view('.user.books.booksshow');
+        });
+    Route::get('/user/borrows', function () {
+        return view('.user.borrows.borrowuserindex');
+    });
+
+// end route admin user
+
 Route::match(['get', 'post'], '/register', function (Request $request) {
     if ($request->isMethod('post')) {
         // Validasi data
