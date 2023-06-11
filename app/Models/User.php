@@ -12,6 +12,11 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    public function updateProfile(array $data)
+    {
+        return $this->fill($data)->save();
+    }
+
     /**
      * The table associated with the model.
      *
@@ -27,7 +32,7 @@ class User extends Authenticatable
     protected $primaryKey = 'id';
 
     /**
-     * The attributes that are mass assignable.
+     * The table associated with the model.
      *
      * @var array
      */
