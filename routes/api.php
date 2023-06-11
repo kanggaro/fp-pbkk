@@ -4,6 +4,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\AuthorController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PublisherController;
+use App\Http\Controllers\ShelfController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,3 +42,31 @@ Route::get('/books/category/{category}', [BookController::class, 'getByCategory'
 Route::get('/books/shelf/{shelf}', [BookController::class, 'getByShelf']);
 Route::get('/books/author/{author}', [BookController::class, 'getByAuthor']);
 Route::get('/books/publisher/{publisher}', [BookController::class, 'getByPublisher']);
+
+// author api routes
+Route::get('/authors', [AuthorController::class, 'index']);
+Route::get('/authors/{id}', [AuthorController::class, 'show']);
+Route::post('/authors', [AuthorController::class, 'store']);
+Route::put('/authors/{id}', [AuthorController::class, 'update']);
+Route::delete('/authors/{id}', [AuthorController::class, 'destroy']);
+
+// category api routes
+Route::get('/categories', [CategoryController::class, 'index']);
+Route::get('/categories/{id}', [CategoryController::class, 'show']);
+Route::post('/categories', [CategoryController::class, 'store']);
+Route::put('/categories/{id}', [CategoryController::class, 'update']);
+Route::delete('/categories/{id}', [CategoryController::class, 'destroy']);
+
+// publisher api routes
+Route::get('/publishers', [PublisherController::class, 'index']);
+Route::get('/publishers/{id}', [PublisherController::class, 'show']);
+Route::post('/publishers', [PublisherController::class, 'store']);
+Route::put('/publishers/{id}', [PublisherController::class, 'update']);
+Route::delete('/publishers/{id}', [PublisherController::class, 'destroy']);
+
+// shelf api routes
+Route::get('/shelves', [ShelfController::class, 'index']);
+Route::get('/shelves/{id}', [ShelfController::class, 'show']);
+Route::post('/shelves', [ShelfController::class, 'store']);
+Route::put('/shelves/{id}', [ShelfController::class, 'update']);
+Route::delete('/shelves/{id}', [ShelfController::class, 'destroy']);
