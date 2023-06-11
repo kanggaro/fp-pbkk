@@ -29,8 +29,4 @@
     </div>
 </body>
 
-<<<<<<< HEAD:resources/views/login.blade.php
 </html>
-=======
-</html>
->>>>>>> c9ea6c761f7be28d8fea98268ee4539c546f2eb7:resources/views/users/login.blade.php
