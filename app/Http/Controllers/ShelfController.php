@@ -29,26 +29,6 @@ class ShelfController extends Controller
      */
     public function store(Request $request)
     {
-        $shelf = Shelf::find($id);
-
-        if (!$shelf) {
-            return response()->json([
-                'message' => 'Shelf not found'
-            ], 404);
-        }
-        return response()->json([
-            'data' => $shelf
-        ]);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Shelf  $shelf
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
         $request->validate([
             'number' => 'required',
             'location' => 'required',
@@ -63,6 +43,26 @@ class ShelfController extends Controller
             'message' => 'Shelf created successfully',
             'data' => $shelf
         ], 201);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\Shelf  $shelf
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        $shelf = Shelf::find($id);
+
+        if (!$shelf) {
+            return response()->json([
+                'message' => 'Shelf not found'
+            ], 404);
+        }
+        return response()->json([
+            'data' => $shelf
+        ]);
     }
 
     /**

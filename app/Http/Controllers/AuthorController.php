@@ -29,26 +29,6 @@ class AuthorController extends Controller
      */
     public function store(Request $request)
     {
-        $author = Author::find($id);
-
-        if (!$author) {
-            return response()->json([
-                'message' => 'Author not found'
-            ], 404);
-        }
-        return response()->json([
-            'data' => $author
-        ]);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Author  $author
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
         $request->validate([
             'name' => 'required',
             'description' => 'required',
@@ -63,6 +43,26 @@ class AuthorController extends Controller
             'message' => 'Author created successfully',
             'data' => $author
         ], 201);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\Author  $author
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        $author = Author::find($id);
+
+        if (!$author) {
+            return response()->json([
+                'message' => 'Author not found'
+            ], 404);
+        }
+        return response()->json([
+            'data' => $author
+        ]);
     }
 
     /**

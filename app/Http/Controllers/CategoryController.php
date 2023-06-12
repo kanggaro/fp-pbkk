@@ -29,26 +29,6 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $category = Category::find($id);
-
-        if (!$category) {
-            return response()->json([
-                'message' => 'Category not found'
-            ], 404);
-        }
-        return response()->json([
-            'data' => $category
-        ]);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Category  $category
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
         $request->validate([
             'name' => 'required',
             'description' => 'required',
@@ -63,6 +43,26 @@ class CategoryController extends Controller
             'message' => 'Category created successfully',
             'data' => $category
         ], 201);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\Category  $category
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        $category = Category::find($id);
+
+        if (!$category) {
+            return response()->json([
+                'message' => 'Category not found'
+            ], 404);
+        }
+        return response()->json([
+            'data' => $category
+        ]);
     }
 
     /**

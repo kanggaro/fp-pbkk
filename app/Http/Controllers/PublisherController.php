@@ -29,26 +29,6 @@ class PublisherController extends Controller
      */
     public function store(Request $request)
     {
-        $publisher = Publisher::find($id);
-
-        if (!$publisher) {
-            return response()->json([
-                'message' => 'Publisher not found'
-            ], 404);
-        }
-        return response()->json([
-            'data' => $publisher
-        ]);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Publisher  $publisher
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
         $request->validate([
             'name' => 'required',
             'description' => 'required',
@@ -63,6 +43,26 @@ class PublisherController extends Controller
             'message' => 'Publisher created successfully',
             'data' => $publisher
         ], 201);
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\Publisher  $publisher
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        $publisher = Publisher::find($id);
+
+        if (!$publisher) {
+            return response()->json([
+                'message' => 'Publisher not found'
+            ], 404);
+        }
+        return response()->json([
+            'data' => $publisher
+        ]);
     }
 
     /**
